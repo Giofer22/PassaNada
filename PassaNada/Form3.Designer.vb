@@ -32,11 +32,11 @@ Partial Class frmMoradores
         Me.cbEstado = New System.Windows.Forms.ComboBox()
         Me.txtCep = New System.Windows.Forms.MaskedTextBox()
         Me.lblCep = New System.Windows.Forms.Label()
-        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtCidade = New System.Windows.Forms.MaskedTextBox()
         Me.lblCidade = New System.Windows.Forms.Label()
-        Me.MaskedTextBox4 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtBairro = New System.Windows.Forms.MaskedTextBox()
         Me.lblBairro = New System.Windows.Forms.Label()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtComplemento = New System.Windows.Forms.MaskedTextBox()
         Me.lblComplemento = New System.Windows.Forms.Label()
         Me.txtNumero = New System.Windows.Forms.MaskedTextBox()
         Me.lblNumero = New System.Windows.Forms.Label()
@@ -147,12 +147,12 @@ Partial Class frmMoradores
         Me.lblCep.TabIndex = 54
         Me.lblCep.Text = "CEP:"
         '
-        'MaskedTextBox3
+        'txtCidade
         '
-        Me.MaskedTextBox3.Location = New System.Drawing.Point(312, 166)
-        Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 20)
-        Me.MaskedTextBox3.TabIndex = 53
+        Me.txtCidade.Location = New System.Drawing.Point(312, 166)
+        Me.txtCidade.Name = "txtCidade"
+        Me.txtCidade.Size = New System.Drawing.Size(197, 20)
+        Me.txtCidade.TabIndex = 53
         '
         'lblCidade
         '
@@ -164,12 +164,12 @@ Partial Class frmMoradores
         Me.lblCidade.TabIndex = 52
         Me.lblCidade.Text = "Cidade:"
         '
-        'MaskedTextBox4
+        'txtBairro
         '
-        Me.MaskedTextBox4.Location = New System.Drawing.Point(15, 166)
-        Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 20)
-        Me.MaskedTextBox4.TabIndex = 51
+        Me.txtBairro.Location = New System.Drawing.Point(15, 166)
+        Me.txtBairro.Name = "txtBairro"
+        Me.txtBairro.Size = New System.Drawing.Size(291, 20)
+        Me.txtBairro.TabIndex = 51
         '
         'lblBairro
         '
@@ -181,12 +181,12 @@ Partial Class frmMoradores
         Me.lblBairro.TabIndex = 50
         Me.lblBairro.Text = "Bairro:"
         '
-        'MaskedTextBox1
+        'txtComplemento
         '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(458, 117)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 20)
-        Me.MaskedTextBox1.TabIndex = 49
+        Me.txtComplemento.Location = New System.Drawing.Point(458, 117)
+        Me.txtComplemento.Name = "txtComplemento"
+        Me.txtComplemento.Size = New System.Drawing.Size(330, 20)
+        Me.txtComplemento.TabIndex = 49
         '
         'lblComplemento
         '
@@ -405,11 +405,11 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.cbEstado)
         Me.Controls.Add(Me.txtCep)
         Me.Controls.Add(Me.lblCep)
-        Me.Controls.Add(Me.MaskedTextBox3)
+        Me.Controls.Add(Me.txtCidade)
         Me.Controls.Add(Me.lblCidade)
-        Me.Controls.Add(Me.MaskedTextBox4)
+        Me.Controls.Add(Me.txtBairro)
         Me.Controls.Add(Me.lblBairro)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.txtComplemento)
         Me.Controls.Add(Me.lblComplemento)
         Me.Controls.Add(Me.txtNumero)
         Me.Controls.Add(Me.lblNumero)
@@ -427,6 +427,7 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMoradores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Moradores"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -444,11 +445,11 @@ Partial Class frmMoradores
     Friend WithEvents cbEstado As ComboBox
     Friend WithEvents txtCep As MaskedTextBox
     Friend WithEvents lblCep As Label
-    Friend WithEvents MaskedTextBox3 As MaskedTextBox
+    Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents lblCidade As Label
-    Friend WithEvents MaskedTextBox4 As MaskedTextBox
+    Friend WithEvents txtBairro As MaskedTextBox
     Friend WithEvents lblBairro As Label
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents txtComplemento As MaskedTextBox
     Friend WithEvents lblComplemento As Label
     Friend WithEvents txtNumero As MaskedTextBox
     Friend WithEvents lblNumero As Label
