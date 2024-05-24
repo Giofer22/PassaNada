@@ -80,16 +80,16 @@
       <DependentUpon>frmTelaLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="frmTelaInicial.Designer.vb">
+      <DependentUpon>frmTelaInicial.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="frmTelaInicial.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="frmMoradores.Designer.vb">
+      <DependentUpon>frmMoradores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="frmMoradores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmVisitante.Designer.vb">
@@ -119,11 +119,11 @@
     <EmbeddedResource Include="frmTelaLogin.resx">
       <DependentUpon>frmTelaLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="frmTelaInicial.resx">
+      <DependentUpon>frmTelaInicial.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="frmMoradores.resx">
+      <DependentUpon>frmMoradores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisitante.resx">
       <DependentUpon>frmVisitante.vb</DependentUpon>
