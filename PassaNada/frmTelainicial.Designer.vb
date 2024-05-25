@@ -32,7 +32,10 @@ Partial Class frmTelaInicial
         Me.HistóricoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MoradoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FecharToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripUsuario = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MenuStrip2.SuspendLayout()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnHistorico
@@ -110,11 +113,27 @@ Partial Class frmTelaInicial
         Me.FecharToolStripMenuItem.Text = "&Fechar"
         Me.FecharToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripUsuario})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 376)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.TabIndex = 12
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'ToolStripUsuario
+        '
+        Me.ToolStripUsuario.Name = "ToolStripUsuario"
+        Me.ToolStripUsuario.Size = New System.Drawing.Size(119, 17)
+        Me.ToolStripUsuario.Text = "ToolStripStatusLabel1"
+        '
         'frmTelaInicial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 398)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnHistorico)
         Me.Controls.Add(Me.btnMoradores)
         Me.Controls.Add(Me.BtnVisitantes)
@@ -126,6 +145,8 @@ Partial Class frmTelaInicial
         Me.Text = "Tela Inicial"
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -139,4 +160,6 @@ Partial Class frmTelaInicial
     Friend WithEvents HistóricoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MoradoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FecharToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents ToolStripUsuario As ToolStripStatusLabel
 End Class

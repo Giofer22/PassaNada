@@ -54,12 +54,39 @@
 
     Private Sub lsvDados_DoubleClick(sender As Object, e As EventArgs) Handles lsvDados.DoubleClick
         txtCod.Text = lsvDados.SelectedItems(0).Text
-        txtResponsavel.Text = lsvDados.SelectedItems(0).SubItems(0).Text
-        txtCpf.Text = lsvDados.SelectedItems(0).SubItems(1).Text
-        txtWhatsapp.Text = lsvDados.SelectedItems(0).SubItems(2).Text
-        txtEmail.Text = lsvDados.SelectedItems(0).SubItems(3).Text
+        txtResponsavel.Text = lsvDados.SelectedItems(0).SubItems(1).Text
+        txtCpf.Text = lsvDados.SelectedItems(0).SubItems(2).Text
+        txtWhatsapp.Text = lsvDados.SelectedItems(0).SubItems(3).Text
+        txtEmail.Text = lsvDados.SelectedItems(0).SubItems(4).Text
 
 
+
+    End Sub
+
+    Private Sub listarDados()
+        Dim sql = "SELECT * FROM MORADOR ORDER BY RESPONSAVEL"
+
+        vgRegistros.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+        vgRegistros.Open(sql, vgDados)
+
+        If vgRegistros.RecordCount > 0 Then
+
+            While Not vgRegistros.EOF
+
+                Dim item As New ListViewItem
+
+                With lsvDados.Items.Add(item)
+                    .Text = vgRegistros("PK_MORADOR").Value
+                    .SubItems.Add(vgRegistros("RESPONSAVEL").Value)
+                    .SubItems.Add(vgRegistros("CPF").Value)
+                    .SubItems.Add(vgRegistros("WHATSAPP").Value)
+                    .SubItems.Add(vgRegistros("EMAIL").Value)
+
+                End With
+                vgRegistros.MoveNext()
+            End While
+
+        End If
 
     End Sub
 End Class
