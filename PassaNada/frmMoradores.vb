@@ -118,9 +118,9 @@
 
         sql = "SELECT * FROM MORADOR 
                 WHERE PK_MORADOR LIKE '%" & txtBuscar.Text & "%'
-                OR RESPONSAVEL LIKE '%" & txtBuscar.Text & "%'
-                OR CPF LIKE '%" & txtBuscar.Text & "%'
-                OR EMAIL LIKE '%" & txtBuscar.Text & "%'
+                OR RESPONSAVEL LIKE '%" & LCase(txtBuscar.Text) & "%'
+                OR CPF LIKE '%" & LCase(txtBuscar.Text) & "%'
+                OR EMAIL LIKE '%" & LCase(txtBuscar.Text) & "%'
                 ORDER BY RESPONSAVEL"
 
         vgRegistros.CursorLocation = ADODB.CursorLocationEnum.adUseClient
