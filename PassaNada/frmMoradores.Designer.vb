@@ -30,8 +30,6 @@ Partial Class frmMoradores
         Me.lblBuscar = New System.Windows.Forms.Label()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.cbEstado = New System.Windows.Forms.ComboBox()
-        Me.txtCep = New System.Windows.Forms.MaskedTextBox()
-        Me.lblCep = New System.Windows.Forms.Label()
         Me.txtCidade = New System.Windows.Forms.MaskedTextBox()
         Me.lblCidade = New System.Windows.Forms.Label()
         Me.txtBairro = New System.Windows.Forms.MaskedTextBox()
@@ -128,24 +126,6 @@ Partial Class frmMoradores
         Me.cbEstado.Name = "cbEstado"
         Me.cbEstado.Size = New System.Drawing.Size(142, 21)
         Me.cbEstado.TabIndex = 56
-        '
-        'txtCep
-        '
-        Me.txtCep.Location = New System.Drawing.Point(663, 165)
-        Me.txtCep.Mask = "00000-000"
-        Me.txtCep.Name = "txtCep"
-        Me.txtCep.Size = New System.Drawing.Size(125, 20)
-        Me.txtCep.TabIndex = 55
-        '
-        'lblCep
-        '
-        Me.lblCep.AutoSize = True
-        Me.lblCep.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCep.Location = New System.Drawing.Point(660, 147)
-        Me.lblCep.Name = "lblCep"
-        Me.lblCep.Size = New System.Drawing.Size(34, 15)
-        Me.lblCep.TabIndex = 54
-        Me.lblCep.Text = "CEP:"
         '
         'txtCidade
         '
@@ -403,8 +383,6 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.lblBuscar)
         Me.Controls.Add(Me.lblEstado)
         Me.Controls.Add(Me.cbEstado)
-        Me.Controls.Add(Me.txtCep)
-        Me.Controls.Add(Me.lblCep)
         Me.Controls.Add(Me.txtCidade)
         Me.Controls.Add(Me.lblCidade)
         Me.Controls.Add(Me.txtBairro)
@@ -443,8 +421,6 @@ Partial Class frmMoradores
     Friend WithEvents lblBuscar As Label
     Friend WithEvents lblEstado As Label
     Friend WithEvents cbEstado As ComboBox
-    Friend WithEvents txtCep As MaskedTextBox
-    Friend WithEvents lblCep As Label
     Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents lblCidade As Label
     Friend WithEvents txtBairro As MaskedTextBox
